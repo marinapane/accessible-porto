@@ -1,0 +1,67 @@
+ACCESSIBLE PORTO — MEETING PROTOTYPE
+
+OPENING THE DEMO
+Double-click index.html. It works offline in a modern web browser.
+No install, sign-in, spreadsheet connection, or internet is required.
+Bring the full project folder on your laptop or a USB drive so the sample
+database downloads work. Keep a printed copy as a backup.
+Use “Print meeting copy” on the page to print or save a PDF.
+
+SUGGESTED FIVE-MINUTE WALKTHROUGH
+1. Explain that the name is provisional and all eight listings are fictional.
+2. Search for “transport” and open the result’s details.
+3. Clear filters, then select “Step-free access” and “Hearing support”.
+4. Clear the filters and reopen Community mobility desk to compare Yes, No,
+   and Unknown access information.
+5. Use the Meeting guide at the bottom to discuss the decisions below.
+
+DECISIONS FOR THE GROUP
+- Audience: residents, visitors, carers, or everyone?
+- Coverage: Porto city initially, or Greater Porto?
+- Priorities: which three categories should be populated first?
+- Languages: Portuguese and English; who will review translations?
+- Access: which specific features should be recorded, and how?
+- Trust: who checks provider claims and community reports?
+- Ownership: who will manage the project accounts and maintain the site?
+- Contributions: who moderates suggested listings and corrections?
+- Pilot: who can contribute and check the first 20–30 real listings?
+
+PROPOSED FIRST SPREADSHEET
+Listings tab: stable ID, name, category ID, description in Portuguese and
+English, area, address, public contact details, website, languages, hours,
+cost or eligibility, access feature values (Yes / No / Unknown), access
+notes, source, date checked, and publication status.
+Categories tab: stable ID and Portuguese/English category names.
+Keep private submissions and contributor contacts in a separate restricted
+file. Only approved public fields should be published to the website.
+Defer public reviews until there is a moderation process.
+
+QUESTIONS FOR LUIS
+- May we see a blank copy of your spreadsheet structure?
+- How do approved spreadsheet updates reach the website?
+- What happens if the spreadsheet is unavailable?
+- Is any code available to reuse, and under what licence?
+- Who maintains the site, and how are corrections handled?
+
+WHAT WORKS NOW
+Keyword search, category and area filters, combined access filters,
+listing detail dialogs, keyboard operation, responsive layout, and printing.
+There are no third-party fonts, scripts, analytics, or network dependencies.
+
+WHAT IS STILL PROPOSED
+Real listings, Google Sheets publishing, suggestion forms, translations,
+hosting, a final project name, community validation, and a full accessibility
+review with disabled participants. This prototype is not a WCAG conformance
+certification and must not be presented as a verified service directory.
+
+EXAMPLE DATABASE
+Open outputs/porto-demo/porto-example-database.xlsx in Excel or import it into
+Google Sheets. It contains Listings, Categories, Reviews, and Editing guide.
+CSV versions of the three data tabs are in the same folder. All entries are
+fictional. Editing these files does not update the website automatically.
+
+PHONE LAYOUT
+The page adapts to narrow screens with stacked search controls, one-column
+listing cards, larger touch targets, wrapping navigation, and full-width
+action buttons. Transfer the files to a device to try them locally. A shared
+web address will require hosting, which is not configured in this prototype.
