@@ -51,11 +51,11 @@ The mobile styles have been implemented, but visual testing on an actual phone r
 
 ## Try the directory
 
-1. Search for **transport** and open the result's details.
+1. Search for **taxi** and open the result's details.
 2. Select **Clear filters**.
 3. Select **Step-free access** and **Hearing support** together.
 4. Try a category or area filter.
-5. Clear the filters again and open **Community mobility desk** to see examples of all three values: Yes, No, and Unknown.
+5. Clear the filters again and open **Central Porto Taxi** to see examples of all three values: Yes, No, and Unknown.
 
 When you select multiple access features, a result must have Yes for every selected feature. No and Unknown do not qualify.
 
@@ -67,12 +67,13 @@ Open `outputs/porto-demo/porto-example-database.xlsx` in Excel or another compat
 
 | Tab | Contents |
 | --- | --- |
-| Listings | The same eight fictional services used in the website, with access values and fields for future contact details and translations. |
+| Listings | The same eight fictional listings shown on the website, with access values and fields for future contact details and translations. |
 | Categories | Category IDs and English names, with space for Portuguese names. |
+| Parishes | The seven official parishes available in the Area filter. |
 | Reviews | Two fictional draft reviews demonstrating a possible future moderation structure. They are not displayed on the website. |
 | Editing guide | Instructions for IDs, access values, sources, verification dates, and publication status. |
 
-CSV copies of Listings, Categories, and Reviews are in the same folder. CSV files contain one table each and do not preserve workbook formatting or dropdowns.
+CSV copies of Listings, Categories, Parishes, and Reviews are in the same folder. CSV files contain one table each and do not preserve workbook formatting or dropdowns.
 
 Keep listing and category IDs stable. Use **Unknown** when an access detail has not been confirmed. Blank contact details, translations, and verification dates in the examples are intentional.
 
@@ -97,5 +98,6 @@ outputs/
     porto-example-database.xlsx
     listings.csv
     categories.csv
+    parishes.csv
     reviews.csv
 ```

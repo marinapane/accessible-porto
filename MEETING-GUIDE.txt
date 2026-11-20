@@ -9,9 +9,9 @@ Use “Print meeting copy” on the page to print or save a PDF.
 
 SUGGESTED FIVE-MINUTE WALKTHROUGH
 1. Explain that the name is provisional and all eight listings are fictional.
-2. Search for “transport” and open the result’s details.
+2. Search for “taxi” and open the result’s details.
 3. Clear filters, then select “Step-free access” and “Hearing support”.
-4. Clear the filters and reopen Community mobility desk to compare Yes, No,
+4. Clear the filters and reopen Central Porto Taxi to compare Yes, No,
    and Unknown access information.
 5. Use the Meeting guide at the bottom to discuss the decisions below.
 
@@ -32,6 +32,7 @@ English, area, address, public contact details, website, languages, hours,
 cost or eligibility, access feature values (Yes / No / Unknown), access
 notes, source, date checked, and publication status.
 Categories tab: stable ID and Portuguese/English category names.
+Parishes tab: the seven official parishes used in the Area filter.
 Keep private submissions and contributor contacts in a separate restricted
 file. Only approved public fields should be published to the website.
 Defer public reviews until there is a moderation process.
@@ -56,8 +57,8 @@ certification and must not be presented as a verified service directory.
 
 EXAMPLE DATABASE
 Open outputs/porto-demo/porto-example-database.xlsx in Excel or import it into
-Google Sheets. It contains Listings, Categories, Reviews, and Editing guide.
-CSV versions of the three data tabs are in the same folder. All entries are
+Google Sheets. It contains Listings, Categories, Parishes, Reviews, and Editing guide.
+The workbook and CSVs match the examples on the site. All entries are
 fictional. Editing these files does not update the website automatically.
 
 PHONE LAYOUT
