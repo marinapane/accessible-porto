@@ -40,24 +40,64 @@ h1,h2,h3,.description,.dialog-inner{overflow-wrap:anywhere}
 <div class="search-panel"><div class="search-row"><div><label for="search">What are you looking for?</label><input id="search" type="search" placeholder="Try taxi, equipment, or physiotherapy…"></div><div><label for="category">Category</label><select id="category"><option value="">All categories</option></select></div><div><label for="area">Area</label><select id="area"><option value="">All parishes</option></select></div></div><fieldset><legend>Show examples with these access features</legend><div class="checks"><label><input type="checkbox" value="step">Step-free access</label><label><input type="checkbox" value="toilet">Accessible toilet</label><label><input type="checkbox" value="hearing">Hearing support</label></div></fieldset><p class="small" style="margin:12px 0 0">Selected features must all be marked “Yes” in the sample data. Unknown details are excluded.</p></div>
 <div class="resultsbar"><p id="count" role="status" aria-live="polite" aria-atomic="true"></p><button id="clear" class="text-button" type="button">Clear filters</button></div><div id="cards" class="cards"></div>
 <aside class="trust"><span class="trust-icon" aria-hidden="true">ⓘ</span><div><h3>Useful access information starts with specifics.</h3><p>In the real directory, each feature would show its source and last-checked date. Provider reports, community experiences, and project checks would be distinguished. Unconfirmed details would be marked Unknown.</p></div></aside></section>
-<section id="meeting" class="meeting" aria-labelledby="meeting-title"><div class="wrap"><div class="meeting-head"><div><p class="eyebrow">Let’s shape this together</p><h2 id="meeting-title">A starting point for the conversation</h2><p>This is a working concept, with a provisional name and fictional content.</p></div><button id="print" class="button secondary" type="button">Print meeting copy</button></div><div class="meeting-grid"><article><h3>Who should it serve first?</h3><p>Porto city or Greater Porto? Residents, visitors, carers, or all three? Which everyday needs are hardest to find help for?</p></article><article><h3>What makes a listing useful?</h3><p>Agree the categories and access details with disabled participants. Include mobility, sensory, hearing, vision, and communication needs. Plan Portuguese and English content.</p></article><article><h3>Who keeps it trustworthy?</h3><p>Choose volunteer editors, agree how claims are checked, and decide how people can report corrections. Start with 20–30 carefully checked listings.</p></article></div><div class="workflow"><strong>A simple way to run it</strong><p>Volunteers maintain approved listings in Google Sheets. A publishing step refreshes the searchable website. Suggestions arrive privately for review before appearing in the directory.</p><div class="database-links"><a class="button secondary" href="outputs/porto-demo/porto-example-database.xlsx" download>Download example database (.xlsx)</a><a class="button secondary" href="outputs/porto-demo/listings.csv" download>Download sample listings (.csv)</a></div><p class="small" style="margin-top:14px">The workbook and listing CSV reflect the fictional examples shown above. The workbook also includes categories, parishes, draft reviews, and an editing guide. Spreadsheet edits do not update this demo automatically.</p><p><strong>Not connected in this demo:</strong> Google Sheets, submissions, real service contacts, or translation. Search, filters, listing details, and printing work offline.</p></div></div></section>
+<section id="meeting" class="meeting" aria-labelledby="meeting-title"><div class="wrap"><div class="meeting-head"><div><p class="eyebrow">Let’s shape this together</p><h2 id="meeting-title">A starting point for the conversation</h2><p>This is a working concept, with a provisional name and fictional content.</p></div><button id="print" class="button secondary" type="button">Print meeting copy</button></div><div class="meeting-grid"><article><h3>Who should it serve first?</h3><p>Which areas should we prioritise within Porto, Matosinhos, and Vila Nova de Gaia? Residents, visitors, carers, or all three? Which everyday needs are hardest to find help for?</p></article><article><h3>What makes a listing useful?</h3><p>Agree the categories and access details with disabled participants. Include mobility, sensory, hearing, vision, and communication needs. Plan Portuguese and English content.</p></article><article><h3>Who keeps it trustworthy?</h3><p>Choose volunteer editors, agree how claims are checked, and decide how people can report corrections. Start with 20–30 carefully checked listings.</p></article></div><div class="workflow"><strong>A simple way to run it</strong><p>Volunteers maintain approved listings in Google Sheets. A publishing step refreshes the searchable website. Suggestions arrive privately for review before appearing in the directory.</p><div class="database-links"><a class="button secondary" href="outputs/porto-demo/porto-example-database.xlsx" download>Download example database (.xlsx)</a><a class="button secondary" href="outputs/porto-demo/listings.csv" download>Download sample listings (.csv)</a></div><p class="small" style="margin-top:14px">The workbook and listing CSV reflect the fictional examples shown above. The workbook also includes categories, parishes, draft reviews, and an editing guide. Spreadsheet edits do not update this demo automatically.</p><p><strong>Not connected in this demo:</strong> Google Sheets, submissions, real service contacts, or translation. Search, filters, listing details, and printing work offline.</p></div></div></section>
 </main><footer><div class="wrap footer-row"><span>Accessible Porto · A community directory concept</span><span>Fictional examples · No data is collected or sent</span></div></footer>
 <dialog id="details" aria-labelledby="detail-title"><div class="dialog-inner"><div class="dialog-top"><div><p class="eyebrow" id="detail-category"></p><h2 id="detail-title"></h2></div><button class="close" id="close" type="button" aria-label="Close listing details">×</button></div><p class="notice"><strong>Fictional example.</strong> This service does not represent a real provider. Access features below are illustrative and have not been verified.</p><p id="detail-location" class="small"></p><p id="detail-description"></p><h3>Example access information</h3><table class="access-table"><caption class="small" style="text-align:left">Illustrative values only</caption><tbody id="detail-access"></tbody></table><p id="detail-note"></p><p class="small">A live listing would include contact information, costs or eligibility, an evidence source, the date it was last checked, and a link to report corrections.</p><button id="back" class="button" type="button">Back to directory</button></div></dialog>
 <script>
-const parishes = [
-  'Bonfim',
-  'Campanhã',
-  'Paranhos',
-  'Ramalde',
-  'União das Freguesias de Aldoar, Foz do Douro e Nevogilde',
-  'União das Freguesias de Cedofeita, Miragaia, São Nicolau, Santo Ildefonso, Sé e Vitória',
-  'União das Freguesias de Lordelo do Ouro e Massarelos'
-];
+const parishesByMunicipality = {
+  "Porto": [
+    "Bonfim",
+    "Campanhã",
+    "Paranhos",
+    "Ramalde",
+    "União das Freguesias de Aldoar, Foz do Douro e Nevogilde",
+    "União das Freguesias de Cedofeita, Miragaia, São Nicolau, Santo Ildefonso, Sé e Vitória",
+    "União das Freguesias de Lordelo do Ouro e Massarelos"
+  ],
+  "Matosinhos": [
+    "Custóias",
+    "Guifões",
+    "Lavra",
+    "Leça da Palmeira",
+    "Leça do Balio",
+    "Matosinhos",
+    "Perafita",
+    "Santa Cruz do Bispo",
+    "São Mamede de Infesta",
+    "Senhora da Hora"
+  ],
+  "Vila Nova de Gaia": [
+    "Arcozelo",
+    "Avintes",
+    "Canelas",
+    "Canidelo",
+    "Crestuma",
+    "Grijó",
+    "Gulpilhares",
+    "Lever",
+    "Madalena",
+    "Mafamude",
+    "Olival",
+    "Oliveira do Douro",
+    "Pedroso",
+    "Perosinho",
+    "Sandim",
+    "Santa Marinha",
+    "São Félix da Marinha",
+    "São Pedro da Afurada",
+    "Seixezelo",
+    "Sermonde",
+    "Serzedo",
+    "Valadares",
+    "Vilar de Andorinho",
+    "Vilar do Paraíso"
+  ]
+};
 
 // Assign the broader area labels to parishes for these fictional examples.
 const exampleParishes = {
-  'Central Porto': parishes[5],
-  'Boavista': parishes[6]
+  'Central Porto': 'União das Freguesias de Cedofeita, Miragaia, São Nicolau, Santo Ildefonso, Sé e Vitória',
+  'Boavista': 'União das Freguesias de Lordelo do Ouro e Massarelos'
 };
 
 const accessNames={step:'Step-free access',toilet:'Accessible toilet',hearing:'Hearing support'};
@@ -94,10 +134,19 @@ const categories = [
   "Shopping",
   "Furniture Store",
   "Hiking Trails",
-  "Renting/Buying Mobility Equipment"
+  "Renting/Buying Mobility Equipment",
+  "Long-Term Caregiver",
+  "Accessible Lawyer",
+  "Disability Rights and Personal Injury Lawyer",
+  "Insurance Facilitator"
 ];
 for (const name of categories) category.add(new Option(name, name));
-for (const parish of parishes) area.add(new Option(parish, parish));
+for (const [municipality, parishes] of Object.entries(parishesByMunicipality)) {
+  const group = document.createElement('optgroup');
+  group.label = municipality;
+  for (const parish of parishes) group.append(new Option(parish, parish));
+  area.append(group);
+}
 const normalise=s=>s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
 function render(){const words=normalise(search.value.trim()).split(/\s+/).filter(Boolean);const selected=checks.filter(x=>x.checked).map(x=>x.value);const found=listings.filter(x=>{const text=normalise([x.name,x.category,x.area,x.description].join(' '));return words.every(w=>text.includes(w))&&(!category.value||x.category===category.value)&&(!area.value||(exampleParishes[x.area] ?? x.area)===area.value)&&selected.every(k=>x.access[k]===1)});document.querySelector('#count').textContent=`${found.length} example ${found.length===1?'listing':'listings'}${found.length===listings.length?' to explore':' found'}`;cards.replaceChildren();if(!found.length){const empty=document.createElement('div');empty.className='empty';const title=document.createElement('h3');title.textContent='No examples match these filters';const note=document.createElement('p');note.textContent='Try fewer access features, another area, or a broader search.';const reset=document.createElement('button');reset.className='button secondary';reset.textContent='Reset search and filters';reset.addEventListener('click',resetFilters);empty.append(title,note,reset);cards.append(empty);}for(const x of found){const card=document.createElement('article');card.className='card';card.innerHTML=`<div class="card-body"><div class="card-top"><span class="category">${x.category}</span><span class="fiction">Fictional example</span></div><h3>${x.name}</h3><p class="location">${x.area} · Porto</p><p class="description">${x.description}</p><div class="features">${Object.entries(x.access).filter(([,v])=>v===1).slice(0,3).map(([k])=>`<span class="feature">${accessNames[k]}</span>`).join('')}</div><button class="card-button" type="button" aria-label="View example details for ${x.name}">View example details</button></div>`;card.querySelector('button').addEventListener('click',()=>openDetails(x));cards.append(card)}}
 function resetFilters(){search.value='';category.value='';area.value='';checks.forEach(x=>x.checked=false);render();search.focus()}

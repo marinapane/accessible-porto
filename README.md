@@ -69,7 +69,7 @@ Open `outputs/porto-demo/porto-example-database.xlsx` in Excel or another compat
 | --- | --- |
 | Listings | The same eight fictional listings shown on the website, with access values and fields for future contact details and translations. |
 | Categories | Category IDs and English names, with space for Portuguese names. |
-| Parishes | The seven official parishes available in the Area filter. |
+| Parishes | The official parishes in the Area filter, grouped by Porto, Matosinhos, and Vila Nova de Gaia. |
 | Reviews | Two fictional draft reviews demonstrating a possible future moderation structure. They are not displayed on the website. |
 | Editing guide | Instructions for IDs, access values, sources, verification dates, and publication status. |
 

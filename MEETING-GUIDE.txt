@@ -32,7 +32,7 @@ English, area, address, public contact details, website, languages, hours,
 cost or eligibility, access feature values (Yes / No / Unknown), access
 notes, source, date checked, and publication status.
 Categories tab: stable ID and Portuguese/English category names.
-Parishes tab: the seven official parishes used in the Area filter.
+Parishes tab: the official parishes of Porto, Matosinhos, and Vila Nova de Gaia.
 Keep private submissions and contributor contacts in a separate restricted
 file. Only approved public fields should be published to the website.
 Defer public reviews until there is a moderation process.
