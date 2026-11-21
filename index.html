@@ -37,22 +37,138 @@ h1,h2,h3,.description,.dialog-inner{overflow-wrap:anywhere}
 <img class="illustration" src="assets/accessible-porto.jpeg" width="640" height="640" alt="Illustration of the Douro waterfront and the Dom Luís I Bridge, with people of different ages and abilities in the foreground.">
 </div></section>
 <section id="directory" class="wrap directory" aria-labelledby="directory-title"><div class="section-title"><div><p class="eyebrow">Find what works for you</p><h2 id="directory-title">Explore local support</h2><p>Try a search or combine filters to see how the directory could work.</p></div></div>
-<div class="search-panel"><div class="search-row"><div><label for="search">What are you looking for?</label><input id="search" type="search" placeholder="Try taxi, equipment, or physiotherapy…"></div><div><label for="keywords">Key Words</label><input id="keywords" type="search" placeholder="Try rehabilitation or repairs…"></div><div><label for="category">Category</label><select id="category"><option value="">All categories</option></select></div><div><label for="area">Area</label><select id="area"><option value="">All parishes</option></select></div></div><fieldset><legend>Show examples with these access features</legend><div class="checks"><label><input type="checkbox" value="step">Step-free access</label><label><input type="checkbox" value="toilet">Accessible toilet</label><label><input type="checkbox" value="hearing">Hearing support</label><label><input type="checkbox" value="genderNeutralToilet">Gender-neutral toilet</label></div></fieldset><p class="small" style="margin:12px 0 0">Selected features must all be marked “Yes” in the sample data. Unknown details are excluded.</p></div>
+<div class="search-panel"><div class="search-row"><div><label for="search">What are you looking for?</label><input id="search" type="search" placeholder="Try taxi, equipment, or physiotherapy…"></div><div><label for="keywords">Key Words</label><input id="keywords" type="search" placeholder="Try rehabilitation or repairs…"></div><div><label for="category">Category</label><select id="category"><option value="">All categories</option></select></div><div><label for="subcategory">Subcategory</label><select id="subcategory" disabled><option value="">Select a category first</option></select></div><div><label for="area">Area · Porto District</label><select id="area"><option value="">All municipalities</option></select></div><div><label for="parish">Parish</label><select id="parish" disabled><option value="">Select a municipality first</option></select></div></div><fieldset><legend>Show examples with these access features</legend><div class="checks"><label><input type="checkbox" value="step">Step-free access</label><label><input type="checkbox" value="toilet">Accessible toilet</label><label><input type="checkbox" value="hearing">Hearing support</label><label><input type="checkbox" value="genderNeutralToilet">Gender-neutral toilet</label></div></fieldset><p class="small" style="margin:12px 0 0">Selected features must all be marked “Yes” in the sample data. Unknown details are excluded.</p></div>
 <div class="resultsbar"><p id="count" role="status" aria-live="polite" aria-atomic="true"></p><button id="clear" class="text-button" type="button">Clear filters</button></div><div id="cards" class="cards"></div>
 <aside class="trust"><span class="trust-icon" aria-hidden="true">ⓘ</span><div><h3>Useful access information starts with specifics.</h3><p>In the real directory, each feature would show its source and last-checked date. Provider reports, community experiences, and project checks would be distinguished. Unconfirmed details would be marked Unknown.</p></div></aside></section>
-<section id="meeting" class="meeting" aria-labelledby="meeting-title"><div class="wrap"><div class="meeting-head"><div><p class="eyebrow">Let’s shape this together</p><h2 id="meeting-title">A starting point for the conversation</h2><p>This is a working concept, with a provisional name and fictional content.</p></div><button id="print" class="button secondary" type="button">Print meeting copy</button></div><div class="meeting-grid"><article><h3>Who should it serve first?</h3><p>Which areas should we prioritise within Porto, Matosinhos, and Vila Nova de Gaia? Residents, visitors, carers, or all three? Which everyday needs are hardest to find help for?</p></article><article><h3>What makes a listing useful?</h3><p>Agree the categories and access details with disabled participants. Include mobility, sensory, hearing, vision, and communication needs. Plan Portuguese and English content.</p></article><article><h3>Who keeps it trustworthy?</h3><p>Choose volunteer editors, agree how claims are checked, and decide how people can report corrections. Start with 20–30 carefully checked listings.</p></article></div><div class="workflow"><strong>A simple way to run it</strong><p>Volunteers maintain approved listings in Google Sheets. A publishing step refreshes the searchable website. Suggestions arrive privately for review before appearing in the directory.</p><div class="database-links"><a class="button secondary" href="outputs/porto-demo/porto-example-database.xlsx" download>Download example database (.xlsx)</a><a class="button secondary" href="outputs/porto-demo/listings.csv" download>Download sample listings (.csv)</a></div><p class="small" style="margin-top:14px">The workbook and listing CSV reflect the fictional examples shown above. The workbook also includes categories, parishes, draft reviews, and an editing guide. Spreadsheet edits do not update this demo automatically.</p><p><strong>Not connected in this demo:</strong> Google Sheets, submissions, real service contacts, or translation. Search, filters, listing details, and printing work offline.</p></div></div></section>
+<section id="meeting" class="meeting" aria-labelledby="meeting-title"><div class="wrap"><div class="meeting-head"><div><p class="eyebrow">Let’s shape this together</p><h2 id="meeting-title">A starting point for the conversation</h2><p>This is a working concept, with a provisional name and fictional content.</p></div><button id="print" class="button secondary" type="button">Print meeting copy</button></div><div class="meeting-grid"><article><h3>Who should it serve first?</h3><p>Which areas of Porto District should we prioritise? Residents, visitors, carers, or all three? Which everyday needs are hardest to find help for?</p></article><article><h3>What makes a listing useful?</h3><p>Agree the categories and access details with disabled participants. Include mobility, sensory, hearing, vision, and communication needs. Plan Portuguese and English content.</p></article><article><h3>Who keeps it trustworthy?</h3><p>Choose volunteer editors, agree how claims are checked, and decide how people can report corrections. Start with 20–30 carefully checked listings.</p></article></div><div class="workflow"><strong>A simple way to run it</strong><p>Volunteers maintain approved listings in Google Sheets. A publishing step refreshes the searchable website. Suggestions arrive privately for review before appearing in the directory.</p><div class="database-links"><a class="button secondary" href="outputs/porto-demo/porto-example-database.xlsx" download>Download example database (.xlsx)</a><a class="button secondary" href="outputs/porto-demo/listings.csv" download>Download sample listings (.csv)</a></div><p class="small" style="margin-top:14px">The workbook and listing CSV reflect the fictional examples shown above. The workbook also includes categories, parishes, draft reviews, and an editing guide. Spreadsheet edits do not update this demo automatically.</p><p><strong>Not connected in this demo:</strong> Google Sheets, submissions, real service contacts, or translation. Search, filters, listing details, and printing work offline.</p></div></div></section>
 </main><footer><div class="wrap footer-row"><span>Accessible Porto · A community directory concept</span><span>Fictional examples · No data is collected or sent</span></div></footer>
 <dialog id="details" aria-labelledby="detail-title"><div class="dialog-inner"><div class="dialog-top"><div><p class="eyebrow" id="detail-category"></p><h2 id="detail-title"></h2></div><button class="close" id="close" type="button" aria-label="Close listing details">×</button></div><p class="notice"><strong>Fictional example.</strong> This service does not represent a real provider. Access features below are illustrative and have not been verified.</p><p id="detail-location" class="small"></p><p id="detail-description"></p><h3>Example access information</h3><table class="access-table"><caption class="small" style="text-align:left">Illustrative values only</caption><tbody id="detail-access"></tbody></table><p id="detail-note"></p><p class="small">A live listing would include contact information, costs or eligibility, an evidence source, the date it was last checked, and a link to report corrections.</p><button id="back" class="button" type="button">Back to directory</button></div></dialog>
 <script>
+// Parish names sourced from DGT CAOP2025.
 const parishesByMunicipality = {
-  "Porto": [
-    "Bonfim",
-    "Campanhã",
-    "Paranhos",
-    "Ramalde",
-    "União das Freguesias de Aldoar, Foz do Douro e Nevogilde",
-    "União das Freguesias de Cedofeita, Miragaia, São Nicolau, Santo Ildefonso, Sé e Vitória",
-    "União das Freguesias de Lordelo do Ouro e Massarelos"
+  "Amarante": [
+    "Ansiães",
+    "Candemil",
+    "Fregim",
+    "Fridão",
+    "Gondar",
+    "Gouveia (São Simão)",
+    "Jazente",
+    "Lomba",
+    "Louredo",
+    "Lufrei",
+    "Mancelos",
+    "Padronelo",
+    "Rebordelo",
+    "Salvador do Monte",
+    "Telões",
+    "Travanca",
+    "União das freguesias de Aboadela, Sanche e Várzea",
+    "União das freguesias de Amarante (São Gonçalo), Madalena, Cepelos e Gatão",
+    "União das freguesias de Bustelo, Carneiro e Carvalho de Rei",
+    "União das freguesias de Figueiró (Santiago e Santa Cristina)",
+    "União das freguesias de Freixo de Cima e de Baixo",
+    "União das freguesias de Olo e Canadelo",
+    "União das freguesias de Vila Garcia, Aboim e Chapa",
+    "Vila Caiz",
+    "Vila Chã do Marão",
+    "Vila Meã"
+  ],
+  "Baião": [
+    "Frende",
+    "Gestaçô",
+    "Gove",
+    "Grilo",
+    "Loivos do Monte",
+    "Santa Marinha do Zêzere",
+    "União das freguesias de Ancede e Ribadouro",
+    "União das freguesias de Baião (Santa Leocádia) e Mesquinhata",
+    "União das freguesias de Campelo e Ovil",
+    "União das freguesias de Loivos da Ribeira e Tresouras",
+    "União das freguesias de Santa Cruz do Douro e São Tomé de Covelas",
+    "União das freguesias de Teixeira e Teixeiró",
+    "Valadares",
+    "Viariz"
+  ],
+  "Felgueiras": [
+    "Aião",
+    "Airães",
+    "Friande",
+    "Idães",
+    "Jugueiros",
+    "Penacova",
+    "Pinheiro",
+    "Pombeiro de Ribavizela",
+    "Refontoura",
+    "Regilde",
+    "Revinhade",
+    "Sendim",
+    "União das freguesias de Macieira da Lixa e Caramos",
+    "União das freguesias de Margaride (Santa Eulália), Várzea, Lagares, Varziela e Moure",
+    "União das freguesias de Pedreira, Rande e Sernande",
+    "União das freguesias de Torrados e Sousa",
+    "União das freguesias de Unhão e Lordelo",
+    "União das freguesias de Vila Cova da Lixa e Borba de Godim",
+    "União das freguesias de Vila Fria e Vizela (São Jorge)",
+    "União das freguesias de Vila Verde e Santão"
+  ],
+  "Gondomar": [
+    "Baguim do Monte (Rio Tinto)",
+    "Lomba",
+    "Rio Tinto",
+    "União das freguesias de Fânzeres e São Pedro da Cova",
+    "União das freguesias de Foz do Sousa e Covelo",
+    "União das freguesias de Gondomar (São Cosme), Valbom e Jovim",
+    "União das freguesias de Melres e Medas"
+  ],
+  "Lousada": [
+    "Aveleda",
+    "Barrosas (Santo Estêvão)",
+    "Caíde de Rei",
+    "Lodares",
+    "Lustosa",
+    "Macieira",
+    "Meinedo",
+    "Nevogilde",
+    "Sousela",
+    "Torno",
+    "União das freguesias de Cernadelo e Lousada (São Miguel e Santa Margarida)",
+    "União das freguesias de Cristelos, Boim e Ordem",
+    "União das freguesias de Figueiras e Covas",
+    "União das freguesias de Nespereira e Casais",
+    "União das freguesias de Silvares, Pias, Nogueira e Alvarenga",
+    "Vilar do Torno e Alentém"
+  ],
+  "Maia": [
+    "Águas Santas",
+    "Castêlo da Maia",
+    "Cidade da Maia",
+    "Folgosa",
+    "Milheirós",
+    "Moreira",
+    "Nogueira e Silva Escura",
+    "Pedrouços",
+    "São Pedro Fins",
+    "Vila Nova da Telha"
+  ],
+  "Marco de Canaveses": [
+    "Alpendorada, Várzea e Torrão",
+    "Avessadas e Rosém",
+    "Banho e Carvalhosa",
+    "Bem Viver",
+    "Constance",
+    "Marco",
+    "Paços de Gaiolo",
+    "Paredes de Viadores e Manhuncelos",
+    "Penha Longa",
+    "Sande e São Lourenço do Douro",
+    "Santo Isidoro e Livração",
+    "Soalhães",
+    "Sobretâmega",
+    "Tabuado",
+    "Várzea, Aliviada e Folhada",
+    "Vila Boa de Quires e Maureles",
+    "Vila Boa do Bispo"
   ],
   "Matosinhos": [
     "Custóias",
@@ -65,6 +181,155 @@ const parishesByMunicipality = {
     "Santa Cruz do Bispo",
     "São Mamede de Infesta",
     "Senhora da Hora"
+  ],
+  "Paços de Ferreira": [
+    "Arreigada",
+    "Carvalhosa",
+    "Codessos",
+    "Eiriz",
+    "Ferreira",
+    "Figueiró",
+    "Frazão",
+    "Freamunde",
+    "Lamoso",
+    "Meixomil",
+    "Modelos",
+    "Paços de Ferreira",
+    "Penamaior",
+    "Raimonda",
+    "Sanfins de Ferreira",
+    "Seroa"
+  ],
+  "Paredes": [
+    "Aguiar de Sousa",
+    "Astromil",
+    "Baltar",
+    "Beire",
+    "Cete",
+    "Cristelo",
+    "Duas Igrejas",
+    "Gandra",
+    "Lordelo",
+    "Louredo",
+    "Parada de Todeia",
+    "Paredes",
+    "Rebordosa",
+    "Recarei",
+    "Sobreira",
+    "Sobrosa",
+    "Vandoma",
+    "Vilela"
+  ],
+  "Penafiel": [
+    "Abragão",
+    "Boelhe",
+    "Bustelo",
+    "Cabeça Santa",
+    "Canelas",
+    "Capela",
+    "Castelões",
+    "Croca",
+    "Duas Igrejas",
+    "Eja",
+    "Fonte Arcada",
+    "Galegos",
+    "Guilhufe e Urrô",
+    "Irivo",
+    "Lagares e Figueira",
+    "Luzim e Vila Cova",
+    "Oldrões",
+    "Paço de Sousa",
+    "Penafiel",
+    "Perozelo",
+    "Rans",
+    "Recezinhos (São Mamede)",
+    "Recezinhos (São Martinho)",
+    "Rio de Moinhos",
+    "Rio Mau",
+    "Sebolido",
+    "Termas de São Vicente",
+    "Valpedre"
+  ],
+  "Porto": [
+    "Bonfim",
+    "Campanhã",
+    "Paranhos",
+    "Ramalde",
+    "União das freguesias de Aldoar, Foz do Douro e Nevogilde",
+    "União das freguesias de Cedofeita, Santo Ildefonso, Sé, Miragaia, São Nicolau e Vitória",
+    "União das freguesias de Lordelo do Ouro e Massarelos"
+  ],
+  "Póvoa de Varzim": [
+    "Aguçadoura",
+    "Amorim",
+    "Argivai",
+    "Aver-o-Mar",
+    "Balazar",
+    "Beiriz",
+    "Estela",
+    "Laundos",
+    "Navais",
+    "Póvoa de Varzim",
+    "Rates",
+    "Terroso"
+  ],
+  "Santo Tirso": [
+    "Agrela",
+    "Água Longa",
+    "Aves",
+    "Monte Córdova",
+    "Negrelos (São Tomé)",
+    "Rebordões",
+    "Reguenga",
+    "Roriz",
+    "União das freguesias de Areias, Sequeiró, Lama e Palmeira",
+    "União das freguesias de Carreira e Refojos de Riba de Ave",
+    "União das freguesias de Lamelas e Guimarei",
+    "União das freguesias de Santo Tirso, Couto (Santa Cristina e São Miguel) e Burgães",
+    "Vila Nova do Campo",
+    "Vilarinho"
+  ],
+  "Trofa": [
+    "Alvarelhos",
+    "Covelas",
+    "Guidões",
+    "Muro",
+    "União das freguesias de Bougado (São Martinho e Santiago)",
+    "União das freguesias de Coronado (São Romão e São Mamede)"
+  ],
+  "Valongo": [
+    "Alfena",
+    "Campo",
+    "Ermesinde",
+    "Sobrado",
+    "Valongo"
+  ],
+  "Vila do Conde": [
+    "Arcos",
+    "Árvore",
+    "Aveleda",
+    "Azurara",
+    "Canidelo",
+    "Fajozes",
+    "Fornelo",
+    "Gião",
+    "Guilhabreu",
+    "Junqueira",
+    "Labruge",
+    "Macieira da Maia",
+    "Malta",
+    "Mindelo",
+    "Modivas",
+    "Retorta",
+    "Rio Mau",
+    "Tougues",
+    "União das freguesias de Bagunte, Ferreiró, Outeiro Maior e Parada",
+    "União das freguesias de Touguinha e Touguinhó",
+    "União das freguesias de Vilar e Mosteiró",
+    "Vairão",
+    "Vila Chã",
+    "Vila do Conde",
+    "Vilar de Pinheiro"
   ],
   "Vila Nova de Gaia": [
     "Arcozelo",
@@ -96,22 +361,22 @@ const parishesByMunicipality = {
 
 // Assign the broader area labels to parishes for these fictional examples.
 const exampleParishes = {
-  'Central Porto': 'União das Freguesias de Cedofeita, Miragaia, São Nicolau, Santo Ildefonso, Sé e Vitória',
-  'Boavista': 'União das Freguesias de Lordelo do Ouro e Massarelos'
+  'Central Porto': 'União das freguesias de Cedofeita, Santo Ildefonso, Sé, Miragaia, São Nicolau e Vitória',
+  'Boavista': 'União das freguesias de Lordelo do Ouro e Massarelos'
 };
 
 const accessNames={step:'Step-free access',toilet:'Accessible toilet',hearing:'Hearing support',genderNeutralToilet:'Gender-neutral toilet'};
 const listings=[
-{id:1,name:"Central Porto Taxi",category:"Taxi",area:'Central Porto',description:"A fictional taxi service for local transport in Porto.",keywords:"taxi, transport, booking",access:{step:1,toilet:0,hearing:null,genderNeutralToilet:null},note:"A taxi listing should explain booking, boarding assistance, and whether a wheelchair can be carried."},
-{id:2,name:"Bonfim Personal Assistance",category:"Personal Assistant",area:'Bonfim',description:"A fictional service offering personal assistance with daily routines and community activities.",keywords:"personal assistance, daily routines, independent living",access:{step:1,toilet:1,hearing:1,genderNeutralToilet:null},note:"A real support listing should explain eligibility, languages, availability, and how helpers are selected."},
-{id:3,name:"Riverside Community Café",category:"Restaurant",area:'Campanhã',description:"A fictional café serving meals, with example information about its entrance and facilities.",keywords:"café, dining, meals",access:{step:1,toilet:1,hearing:0,genderNeutralToilet:null},note:"A real venue listing should include doorway measurements, toilet details, and information about noise and seating."},
-{id:4,name:"Paranhos Mobility Equipment Centre",category:"Medical Equipment",area:'Paranhos',description:"A fictional supplier of mobility aids and other medical equipment.",keywords:"mobility aids, equipment, rental",access:{step:1,toilet:null,hearing:null,genderNeutralToilet:null},note:"A real equipment listing should describe rental or purchase options, fitting, costs, and maintenance."},
-{id:5,name:"Boavista Physiotherapy Clinic",category:"Mental Health & Rehabilitation",area:'Boavista',description:"A fictional clinic offering physiotherapy appointments and exercise guidance.",keywords:"physiotherapy, rehabilitation, exercise",access:{step:1,toilet:1,hearing:1,genderNeutralToilet:null},note:"A physiotherapy listing should describe appointment arrangements and access to treatment rooms."},
-{id:6,name:"Porto Folding Wheelchair Rides",category:"Private Hire Vehicle (TVDE) for Folding Wheelchairs",area:'Central Porto',description:"A fictional private hire service with space to carry a folding wheelchair.",keywords:"TVDE, private hire, folding wheelchair",access:{step:null,toilet:null,hearing:1,genderNeutralToilet:null},note:"A listing should specify folded dimensions, booking arrangements, and whether passengers need to transfer to a vehicle seat."},
-{id:7,name:"Bonfim Community Gym",category:"Gym",area:'Bonfim',description:"A fictional gym with fitness equipment and example information about noise and access.",keywords:"gym, fitness, exercise",access:{step:0,toilet:0,hearing:1,genderNeutralToilet:null},note:"This example intentionally has no step-free access. Access needs should be described individually, rather than with one general label."},
-{id:8,name:"Campanhã Wheelchair Workshop",category:"Wheelchair Maintenance",area:'Campanhã',description:"A fictional workshop offering wheelchair maintenance and repairs.",keywords:"wheelchair, maintenance, repairs",access:{step:1,toilet:null,hearing:0,genderNeutralToilet:null},note:"A repair listing should say which wheelchair types it services and whether it offers home visits."}
+{id:1,name:"Central Porto Taxi",category:"Taxi",area:'Central Porto',municipality:'Porto',description:"A fictional taxi service for local transport in Porto.",keywords:"taxi, transport, booking",access:{step:1,toilet:0,hearing:null,genderNeutralToilet:null},note:"A taxi listing should explain booking, boarding assistance, and whether a wheelchair can be carried."},
+{id:2,name:"Bonfim Personal Assistance",category:"Personal Assistant",area:'Bonfim',municipality:'Porto',description:"A fictional service offering personal assistance with daily routines and community activities.",keywords:"personal assistance, daily routines, independent living",access:{step:1,toilet:1,hearing:1,genderNeutralToilet:null},note:"A real support listing should explain eligibility, languages, availability, and how helpers are selected."},
+{id:3,name:"Riverside Community Café",category:"Restaurant",area:'Campanhã',municipality:'Porto',description:"A fictional café serving meals, with example information about its entrance and facilities.",keywords:"café, dining, meals",access:{step:1,toilet:1,hearing:0,genderNeutralToilet:null},note:"A real venue listing should include doorway measurements, toilet details, and information about noise and seating."},
+{id:4,name:"Paranhos Mobility Equipment Centre",category:"Medical Equipment",area:'Paranhos',municipality:'Porto',description:"A fictional supplier of mobility aids and other medical equipment.",keywords:"mobility aids, equipment, rental",access:{step:1,toilet:null,hearing:null,genderNeutralToilet:null},note:"A real equipment listing should describe rental or purchase options, fitting, costs, and maintenance."},
+{id:5,name:"Boavista Physiotherapy Clinic",category:"Mental Health & Rehabilitation",area:'Boavista',municipality:'Porto',description:"A fictional clinic offering physiotherapy appointments and exercise guidance.",keywords:"physiotherapy, rehabilitation, exercise",access:{step:1,toilet:1,hearing:1,genderNeutralToilet:null},note:"A physiotherapy listing should describe appointment arrangements and access to treatment rooms."},
+{id:6,name:"Porto Folding Wheelchair Rides",category:"Private Hire Vehicle (TVDE) for Folding Wheelchairs",area:'Central Porto',municipality:'Porto',description:"A fictional private hire service with space to carry a folding wheelchair.",keywords:"TVDE, private hire, folding wheelchair",access:{step:null,toilet:null,hearing:1,genderNeutralToilet:null},note:"A listing should specify folded dimensions, booking arrangements, and whether passengers need to transfer to a vehicle seat."},
+{id:7,name:"Bonfim Community Gym",category:"Gym",area:'Bonfim',municipality:'Porto',description:"A fictional gym with fitness equipment and example information about noise and access.",keywords:"gym, fitness, exercise",access:{step:0,toilet:0,hearing:1,genderNeutralToilet:null},note:"This example intentionally has no step-free access. Access needs should be described individually, rather than with one general label."},
+{id:8,name:"Campanhã Wheelchair Workshop",category:"Wheelchair Maintenance",area:'Campanhã',municipality:'Porto',description:"A fictional workshop offering wheelchair maintenance and repairs.",keywords:"wheelchair, maintenance, repairs",access:{step:1,toilet:null,hearing:0,genderNeutralToilet:null},note:"A repair listing should say which wheelchair types it services and whether it offers home visits."}
 ];
-const search=document.querySelector('#search'),keywords=document.querySelector('#keywords'),category=document.querySelector('#category'),area=document.querySelector('#area'),cards=document.querySelector('#cards'),checks=[...document.querySelectorAll('.checks input')],details=document.querySelector('#details');
+const search=document.querySelector('#search'),keywords=document.querySelector('#keywords'),category=document.querySelector('#category'),subcategory=document.querySelector('#subcategory'),area=document.querySelector('#area'),parish=document.querySelector('#parish'),cards=document.querySelector('#cards'),checks=[...document.querySelectorAll('.checks input')],details=document.querySelector('#details');
 const categoriesByGroup = {
   "Health, Rehabilitation & Fitness": [
     "Mental Health & Rehabilitation",
@@ -150,24 +415,25 @@ const categoriesByGroup = {
     "Furniture Store"
   ]
 };
-for (const [label, categories] of Object.entries(categoriesByGroup)) {
-  const group = document.createElement('optgroup');
-  group.label = label;
-  for (const name of categories) group.append(new Option(name, name));
-  category.append(group);
+for (const name of Object.keys(categoriesByGroup)) category.add(new Option(name, name));
+for (const name of Object.keys(parishesByMunicipality)) area.add(new Option(name, name));
+
+function updateChildFilter(parent, child, choices, allLabel, prompt) {
+  const options = choices[parent.value] ?? [];
+  child.replaceChildren(new Option(options.length ? allLabel : prompt, ''));
+  for (const name of options) child.add(new Option(name, name));
+  child.disabled = options.length === 0;
+  child.value = '';
 }
-for (const [municipality, parishes] of Object.entries(parishesByMunicipality)) {
-  const group = document.createElement('optgroup');
-  group.label = municipality;
-  for (const parish of parishes) group.append(new Option(parish, parish));
-  area.append(group);
-}
+
+const updateSubcategories = () => updateChildFilter(category, subcategory, categoriesByGroup, 'All subcategories', 'Select a category first');
+const updateParishes = () => updateChildFilter(area, parish, parishesByMunicipality, 'All parishes', 'Select a municipality first');
 const normalise=s=>s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
 const searchTerms = value => normalise(value).split(/[\s,]+/).filter(Boolean);
-function render(){const words=searchTerms(search.value);const keywordTerms=searchTerms(keywords.value);const selected=checks.filter(x=>x.checked).map(x=>x.value);const found=listings.filter(x=>{const text=normalise([x.name,x.category,x.area,x.description].join(' '));return words.every(w=>text.includes(w))&&keywordTerms.every(w=>normalise(x.keywords).includes(w))&&(!category.value||x.category===category.value)&&(!area.value||(exampleParishes[x.area] ?? x.area)===area.value)&&selected.every(k=>x.access[k]===1)});document.querySelector('#count').textContent=`${found.length} example ${found.length===1?'listing':'listings'}${found.length===listings.length?' to explore':' found'}`;cards.replaceChildren();if(!found.length){const empty=document.createElement('div');empty.className='empty';const title=document.createElement('h3');title.textContent='No examples match these filters';const note=document.createElement('p');note.textContent='Try fewer access features, another area, or a broader search.';const reset=document.createElement('button');reset.className='button secondary';reset.textContent='Reset search and filters';reset.addEventListener('click',resetFilters);empty.append(title,note,reset);cards.append(empty);}for(const x of found){const card=document.createElement('article');card.className='card';card.innerHTML=`<div class="card-body"><div class="card-top"><span class="category">${x.category}</span><span class="fiction">Fictional example</span></div><h3>${x.name}</h3><p class="location">${x.area} · Porto</p><p class="description">${x.description}</p><div class="features">${Object.entries(x.access).filter(([,v])=>v===1).slice(0,3).map(([k])=>`<span class="feature">${accessNames[k]}</span>`).join('')}</div><button class="card-button" type="button" aria-label="View example details for ${x.name}">View example details</button></div>`;card.querySelector('button').addEventListener('click',()=>openDetails(x));cards.append(card)}}
-function resetFilters(){search.value='';keywords.value='';category.value='';area.value='';checks.forEach(x=>x.checked=false);render();search.focus()}
-function openDetails(x){document.querySelector('#detail-title').textContent=x.name;document.querySelector('#detail-category').textContent=x.category;document.querySelector('#detail-location').textContent=x.area+' · Porto';document.querySelector('#detail-description').textContent=x.description;document.querySelector('#detail-note').textContent=x.note;document.querySelector('#detail-access').innerHTML=Object.entries(x.access).map(([k,v])=>`<tr><th scope="row">${accessNames[k]}</th><td>${v===1?'Yes':v===0?'No':'Unknown'}</td></tr>`).join('');details.showModal()}
-[search,keywords].forEach(input=>input.addEventListener('input',render));[category,area,...checks].forEach(x=>x.addEventListener('change',render));document.querySelector('#clear').addEventListener('click',resetFilters);document.querySelector('#close').addEventListener('click',()=>details.close());document.querySelector('#back').addEventListener('click',()=>details.close());document.querySelector('#print').addEventListener('click',()=>{resetFilters();window.print()});render();
+function render(){const words=searchTerms(search.value);const keywordTerms=searchTerms(keywords.value);const selected=checks.filter(x=>x.checked).map(x=>x.value);const found=listings.filter(x=>{const text=normalise([x.name,x.category,x.area,x.description].join(' '));return words.every(w=>text.includes(w))&&keywordTerms.every(w=>normalise(x.keywords).includes(w))&&(!category.value||categoriesByGroup[category.value].includes(x.category))&&(!subcategory.value||x.category===subcategory.value)&&(!area.value||x.municipality===area.value)&&(!parish.value||(exampleParishes[x.area] ?? x.area)===parish.value)&&selected.every(k=>x.access[k]===1)});document.querySelector('#count').textContent=`${found.length} example ${found.length===1?'listing':'listings'}${found.length===listings.length?' to explore':' found'}`;cards.replaceChildren();if(!found.length){const empty=document.createElement('div');empty.className='empty';const title=document.createElement('h3');title.textContent='No examples match these filters';const note=document.createElement('p');note.textContent='Try fewer access features, another area, or a broader search.';const reset=document.createElement('button');reset.className='button secondary';reset.textContent='Reset search and filters';reset.addEventListener('click',resetFilters);empty.append(title,note,reset);cards.append(empty);}for(const x of found){const card=document.createElement('article');card.className='card';card.innerHTML=`<div class="card-body"><div class="card-top"><span class="category">${x.category}</span><span class="fiction">Fictional example</span></div><h3>${x.name}</h3><p class="location">${x.area} · ${x.municipality}</p><p class="description">${x.description}</p><div class="features">${Object.entries(x.access).filter(([,v])=>v===1).slice(0,3).map(([k])=>`<span class="feature">${accessNames[k]}</span>`).join('')}</div><button class="card-button" type="button" aria-label="View example details for ${x.name}">View example details</button></div>`;card.querySelector('button').addEventListener('click',()=>openDetails(x));cards.append(card)}}
+function resetFilters(){search.value='';keywords.value='';category.value='';area.value='';updateSubcategories();updateParishes();checks.forEach(x=>x.checked=false);render();search.focus()}
+function openDetails(x){document.querySelector('#detail-title').textContent=x.name;document.querySelector('#detail-category').textContent=x.category;document.querySelector('#detail-location').textContent=x.area+' · '+x.municipality;document.querySelector('#detail-description').textContent=x.description;document.querySelector('#detail-note').textContent=x.note;document.querySelector('#detail-access').innerHTML=Object.entries(x.access).map(([k,v])=>`<tr><th scope="row">${accessNames[k]}</th><td>${v===1?'Yes':v===0?'No':'Unknown'}</td></tr>`).join('');details.showModal()}
+[search,keywords].forEach(input=>input.addEventListener('input',render));category.addEventListener('change',()=>{updateSubcategories();render()});area.addEventListener('change',()=>{updateParishes();render()});[subcategory,parish,...checks].forEach(x=>x.addEventListener('change',render));document.querySelector('#clear').addEventListener('click',resetFilters);document.querySelector('#close').addEventListener('click',()=>details.close());document.querySelector('#back').addEventListener('click',()=>details.close());document.querySelector('#print').addEventListener('click',()=>{resetFilters();window.print()});updateSubcategories();updateParishes();render();
 </script>
 </body>
 </html>
