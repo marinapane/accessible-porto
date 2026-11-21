@@ -53,7 +53,7 @@ The mobile styles have been implemented, but visual testing on an actual phone r
 
 1. Search for **taxi** and open the result's details.
 2. Select **Clear filters**.
-3. Select **Step-free access** and **Hearing support** together.
+3. Select **Step-free access** and **Hearing aid support** together.
 4. Try a category or area filter.
 5. Clear the filters again and open **Central Porto Taxi** to see examples of all three values: Yes, No, and Unknown.
 

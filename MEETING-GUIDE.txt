@@ -10,7 +10,7 @@ Use “Print meeting copy” on the page to print or save a PDF.
 SUGGESTED FIVE-MINUTE WALKTHROUGH
 1. Explain that the name is provisional and all eight listings are fictional.
 2. Search for “taxi” and open the result’s details.
-3. Clear filters, then select “Step-free access” and “Hearing support”.
+3. Clear filters, then select “Step-free access” and “Hearing aid support”.
 4. Clear the filters and reopen Central Porto Taxi to compare Yes, No,
    and Unknown access information.
 5. Use the Meeting guide at the bottom to discuss the decisions below.
